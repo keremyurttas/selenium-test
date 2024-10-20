@@ -22,9 +22,7 @@ public class LoginTest {
     public void init() {
         driver = DriverUtils.getConfiguredDriver();
         dotenv = Dotenv.load();
-        driver.get("https://www.trendyol.com/");
-        WebElement cookiesButton = driver.findElement(By.id("onetrust-accept-btn-handler"));
-        cookiesButton.click();
+
 
         WebElement signinButton = driver.findElement(By.className("account-user"));
         signinButton.click();
